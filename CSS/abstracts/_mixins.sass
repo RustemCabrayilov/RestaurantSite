@@ -1,0 +1,29 @@
+@mixin color($color)
+ color: $color
+@mixin bgColor($bgColor)
+ background-color: $bgColor
+@mixin border($borderColor)
+ border: solid 0.5px $borderColor 
+
+@mixin button($py,$px,$txtColor)
+  padding: $py $px
+  @include color($color: $txtColor)
+
+
+@mixin focusBtn($borderColor,$txtColor,$bgColor)
+  @include border($borderColor:$borderColor)
+  @include color($color: $txtColor)
+  @include bgColor($bgColor: $bgColor)
+
+ 
+@mixin colorSettings($borderColor: null, $txtColor: null, $bgColor: null)
+  @include border(if($borderColor != null, $borderColor, inherit))
+  @include color(if($txtColor != null, $txtColor, inherit))
+  @include bgColor(if($bgColor != null, $bgColor, inherit))
+
+
+  
+
+ 
+ 
+  

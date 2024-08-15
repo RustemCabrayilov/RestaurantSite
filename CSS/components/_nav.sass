@@ -1,0 +1,16 @@
+.nav_bar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 1rem
+  .nav_menu
+    a
+      margin: 6px
+      text-decoration: none
+      color: $dark
+      font-weight: 500
+      &:hover
+        color: $warning
+  .nav_button
+    button
+      @include button(14px,38px,$white)

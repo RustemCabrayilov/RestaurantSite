@@ -1,0 +1,112 @@
+// .rotate 
+//   transform: perspective(800px) rotateY(25deg) !important
+
+// .right_side 
+//   display: flex
+//   flex-direction: column
+//   align-items: center
+//   width: 510px
+//   height: 510px
+//   transition: 4s
+//   transform: perspective(800px) rotateY(0deg)
+//   background-color: $black
+//   border-radius: 18px
+
+.slider-1
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url(../images/cover1.jpg)
+
+.slider-2
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url(../images/cover2.jpg)
+
+.slider-3
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url(../images/cover3.jpg)
+
+#features
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url(../images/cover2.jpg)
+
+footer
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url(../images/cover2.jpg)
+
+#client
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url(../images/cover3.jpg)
+
+.bg-cover
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.carousel-control-next,
+.carousel-control-prev
+  width: 50px
+  height: 50px
+  background-color: rgba(0, 0, 0, .5)
+  color: white
+  margin: auto
+
+
+.custom-container-carousel
+  height: 400px
+.about-btn
+  button
+    @include button(14px,38px,$white)
+.about-img
+  img
+    max-width: 100%
+    height: auto
+
+.about-items
+  .divider
+    width: 60px
+    height: 3px
+    background-color: #f58d17
+    display: block
+  h1
+    font-weight: 600
+    font-size: 3rem
+  p
+    font-size: 1.25rem
+    color: $gray
+  button
+    margin-top: 30px
+    border-radius: 0
+    @include button(14px,38px,$white)
+    &:hover
+      @include focusBtn($dark,#777777,$white)
+.custom-container-menu
+  margin-top: 30px
+  text-align: center
+  h1
+     font-weight: bolder
+     font-size: 40px
+  p
+    font-size: 15px
+    margin: 10px
+    @include color(#777777)
+  @include colorSettings(null,null,#F8F9FA)
+  .card
+    padding: 0
+    transition: all .4s linear
+    &:hover 
+      transform: perspective(800px) translateZ(20px)
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .1)  
+    .stars
+      margin:5px 
+    a
+      margin: 0px 10px
+      text-decoration: none
+      color: $dark
+      font-size: 20px
+      font-weight: 500
+      cursor: pointer  
+    &:hover
+      color: $warning
+    p
+      font-size: 15px
+      margin: 10px
+      @include color(#777777)
+    img
+      width: 100%
+      height: auto
+      border-top-right-radius:5px 
+      border-top-left-radius: 5px
+    
