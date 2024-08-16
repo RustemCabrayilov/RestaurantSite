@@ -1,16 +1,17 @@
-// const rightSide = document.querySelector(".right_side");
-// setTimeout(start3D, 0);
-// setInterval(animation3D, 4000);
-// function animation3D() {
-//   if (rightSide.className == "right_side") {
-//     rightSide.className += " rotate";
-//   } else {
-//     rightSide.className = "right_side";
-//   }
-// }
-// function start3D() {
-//   rightSide.style.transform = "perspective(800px) rotateY(-25deg)";
-// }
+const aboutImg = document.querySelector(".about-img>img");
+setTimeout(start3D, 0);
+setInterval(animation3D, 4000);
+function animation3D() {
+  // if (aboutImg.parentElement.className == "about-img") {
+  //   aboutImg.className += "rotate";
+  // } else {
+  //   aboutImg.className = "about-img";
+  // }
+aboutImg.classList.toggle("rotate")
+}
+function start3D() {
+  aboutImg.style.transform = "perspective(800px) rotateY(-25deg)";
+}
 
 const menu = document.querySelector(".custom-container-menu>.container>.row");
 const headings = [
@@ -40,14 +41,14 @@ const paragraph = [
 
   "Blend of seasoned ground meat, breadcrumbs, and herbs, simmered in a savory sauce until tender and flavorful, offering a comforting and satisfying taste of home in every bite.",
 ];
-for (let index = 0; index < 8; index++) {
+for (let index = 0; index < headings.length; index++) {
   let divel = document.createElement("div");
   let img = document.createElement("img");
   let stars = document.createElement("div");
   let heading = document.createElement("a");
   let p = document.createElement("p");
   img.src = "images/item_" + (index + 1) + ".jpg";
-  divel.className = "col-3 card m-3";
+  divel.className = "col-md-3 card m-3";
   stars.className = "stars";
   stars.innerHTML = getStars(4.5);
   heading.innerHTML = headings[index];
@@ -71,4 +72,31 @@ function getStars(rating) {
     stars += `<i class="fa-solid fa-star-half-alt text-warning ms-1"></i>`;
   }
   return stars;
+}
+const teamMembers = [
+  "Ehmed Huseynov",
+  "Danilo Zanna",
+  "Sadiq Humbetli",
+  "Ramiz Quluzade",
+];
+const roles = ["Main Chef", "Grill Chef", "Sous Chef", "Fish Chef"];
+const team = document.querySelector(".custom-container-team>.container>.row");
+for (let index = 0; index < teamMembers.length; index++) {
+  let divel = document.createElement("div");
+  let img = document.createElement("img");
+  let heading = document.createElement("h5");
+  let role = document.createElement("p");
+
+  if (index == 3) {
+    img.src = "images/team_01.png";
+  } else {
+    img.src = "images/team_0" + (index + 1) + ".png";
+  }
+  divel.className = "col-2 card m-3";
+  heading.innerHTML = teamMembers[index];
+  role.innerHTML = roles[index];
+  divel.appendChild(img);
+  divel.appendChild(heading);
+  divel.appendChild(role);
+  team.appendChild(divel);
 }

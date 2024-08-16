@@ -15,7 +15,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   </head>
   <body>
     <div class="container-fluid">
@@ -25,11 +27,11 @@
             <a href=""><img src="images/Qrispy_dark.svg" alt="" /></a>
           </div>
           <div class="nav_menu">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Menu</a>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
             <a href="">Features</a>
-            <a href="">Team</a>
+            <a href="#team">Team</a>
             <a href="">Blog</a>
           </div>
           <div class="nav_button">
@@ -37,7 +39,7 @@
           </div>
         </nav>
       </div>
-      <div class="custom-container-about">
+      <div class="custom-container-carousel">
         <div
           id="carouselExampleControls"
           class="carousel slide"
@@ -122,7 +124,7 @@
           </button>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="about">
         <div class="row mt-5">
           <div class="col-md-5">
             <div class="about-img">
@@ -130,25 +132,92 @@
             </div>
           </div>
           <div class="col-md-5">
-           <div class="about-items mt-4">
-            <h1>About Us</h1>
-            <div class="divider my-3"></div>
-            <p class="m-0">Food quality and the ambience is the amazing and is the same as it always was.The service remains impeccable, with attentive staff ensuring a delightful dining experience at 
-              every visit. Each dish continues to exude the same exquisite flavors and attention to detail that have made this 
-              restaurant a cherished favorite among patrons. From the warm, inviting decor to the soothing background music, 
-              every aspect contributes to the enduring charm and allure of this culinary gem.</p>
+            <div class="about-items mt-4">
+              <h1>About Us</h1>
+              <div class="divider my-3"></div>
+              <p class="m-0">
+                Food quality and the ambience is the amazing and is the same as
+                it always was.The service remains impeccable, with attentive
+                staff ensuring a delightful dining experience at every visit.
+                Each dish continues to exude the same exquisite flavors and
+                attention to detail that have made this restaurant a cherished
+                favorite among patrons. From the warm, inviting decor to the
+                soothing background music, every aspect contributes to the
+                enduring charm and allure of this culinary gem.
+              </p>
               <button class="btn-warning">Explore Menu</button>
-           </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="custom-container-menu">
+      <div class="custom-container-menu" id="menu">
         <div class="container">
           <div class="row justify-content-center p-4">
             <h1>Explore Our Menu</h1>
-            <p>Embark on a culinary journey and explore our menu, where each dish <br> promises a tantalizing fusion 
-              of flavors and culinary creativity.</p>
-        </div>        
+            <p>
+              Embark on a culinary journey and explore our menu, where each dish
+              <br />
+              promises a tantalizing fusion of flavors and culinary creativity.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-container-team" id="team">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h1>Our Team Members</h1>
+            <p>
+              Our team members are dedicated professionals committed to <br />
+              providing exceptional service and creating memorable experiences
+              <br />
+              for every guest.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-container-footer">
+        <div class="container">
+          <footer>
+            <div class="row pt-5 justify-content-between">
+              <div class="col-4 footer-left">
+                <ul class="footer-logo">
+                  <li><img src="images/Qrispy_white.svg" alt="" /></li>
+                  <li>
+                    <p>
+                      This is footer you are contact of user and founder with this 
+                      avaibale links try to it.
+                    </p>
+                  </li>
+                </ul>
+                <ul class="footer-social-media">
+                  <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="https:/github.com/RustemCabrayilov"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-3 footer-mid">
+                <ul>
+                  <li><h4>Contact</h4></li>
+                  <li><p href="">050-999-99-99</p></li>
+                  <li><p href="">qrispyfood@gmail.com</p></li>
+                  <li><p href="">Nizami Kuc. 96/12 Az1000</p></li>
+                </ul>
+              </div>
+              <div class="col-3 footer-right">
+                <ul>
+                  <li><h4>Opening Hours</h4></li>
+                  <li><p href="">Monday-Friday:08:00-22:00</p></li>
+                  <li><p href="">Sturday-Sunday:08:00-00:00</p></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <hr style="border: 2px solid white;">
+        <div class="container d-flex justify-content-between pt-3">
+          <h4>Copyrights@2024.</h4>
+          <h4>Designed by Rustem Cabrayilov</h4>
         </div>
       </div>
     </div>
@@ -156,6 +225,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-      <script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
